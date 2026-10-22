@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+file(STRINGS "${CMAKE_CURRENT_LIST_DIR}/main/m1_version.h" M1_VERSION_LINE REGEX "^#define M1_VERSION ")
+string(REGEX MATCH "[0-9]+[.][0-9]+" PROJECT_VER "${M1_VERSION_LINE}")
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(tab5_fm1)

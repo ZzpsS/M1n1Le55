@@ -1,0 +1,38 @@
+# Local build products and machine-specific dependency resolution.
+/build/
+/build-tests/
+/managed_components/
+/dependencies.lock
+/sdkconfig
+/sdkconfig.old
+__pycache__/
+*.pyc
+*.elf
+*.map
+*.exe
+*.o
+*.a
+*.log
+.venv/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+# Device data and third-party firmware are never repository source files.
+/captures/
+/research/
+/archives/
+*.fwsc
+*.fwsc.sha256
+*.fm1s
+# Public source stays minimal; binary installation bundles live in Releases.
+/tests/
+/main/m1_fonts.json
+/tools/*
+!/tools/prepare_build.py
+/firmware/*
+!/firmware/README.md
+/assets/*
+!/assets/screens/
+/assets/screens/*
+!/assets/screens/firmware-management.png
