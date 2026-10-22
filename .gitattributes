@@ -1,0 +1,5 @@
+# Preserve audited source, upstream notice and release checksum bytes on clone.
+# This disables line-ending conversion, not text display or text diffs.
+* -text
+*.bin binary
+*.zip binary
