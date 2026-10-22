@@ -6,18 +6,11 @@ Project-owned M1n1Le55 code is licensed under the root [MIT License](LICENSE), C
 
 These notices cover **0.31 / firmware-grid-1**. Dependency pins are in the source distribution's `dependencies.lock.template` and build configuration. The [license-source index](licenses/SOURCE_INDEX.md) preserves the copied upstream texts, provenance and SHA-256 hashes. Archive membership does not mean every feature is used, and this inventory is not an instruction-by-instruction legal analysis of the binary.
 
-## Acknowledgments and upstream projects
+## Firmware provider acknowledgments
 
-Thank you to the authors and contributors whose hardware support, open-source components, fonts and FM-1 research make M1n1Le55 possible:
+Thanks to the FM-1 firmware providers: [M-VAVE](https://www.cuvave.com/download), [hugelton / Felucca](https://github.com/hugelton/Felucca), [isod89 / SLOOP](https://github.com/isod89/sloop-fm1), [Baud Girl / FM-1+VA](https://baudgirl.com/work/FM-1%2BVA/install), [Charles Vestal / FoMni](https://github.com/charlesvestal/fm1-fomni) and [X0X](https://github.com/charlesvestal/fm1-x0x), [zednaked / Jangada](https://github.com/zednaked/jangada), [FM1 Open](https://github.com/m-vave/fm1_open). Obtain these third-party FM-1 firmware releases from their original publishers and use the compatible versions listed for this release.
 
-- **Hardware and UI:** [M5Stack Tab5](https://docs.m5stack.com/en/core/Tab5), [ESP-IDF 5.4.2](https://github.com/espressif/esp-idf/tree/v5.4.2), [Tab5 BSP 1.3.2](https://components.espressif.com/components/espressif/m5stack_tab5/versions/1.3.2), [ESP-Hosted 2.12.9](https://components.espressif.com/components/espressif/esp_hosted/versions/2.12.9), [LVGL 9.6.0~1](https://components.espressif.com/components/lvgl/lvgl/versions/9.6.0~1).
-- **Sound and decoding references:** [Ben Sparrow / FM-1 editor](https://github.com/benny-sparra/fm1-dx7-patch-importer), [Dani Biro / SEA codec](https://github.com/Daninet/sea-codec), [M-VAVE / FM1 Open](https://github.com/m-vave/fm1_open).
-- **Fonts and glyphs:** [Adobe / Source Han Sans](https://github.com/adobe-fonts/source-han-sans), [Viznut / Unscii](https://viznut.fi/unscii/), [Montserrat](https://github.com/JulietaUla/Montserrat), [Font Awesome](https://fontawesome.com/).
-- **Runtime and installation tools:** [GCC](https://gcc.gnu.org/), [Newlib](https://sourceware.org/newlib/), [Python](https://www.python.org/), [esptool 4.11.0](https://github.com/espressif/esptool/tree/v4.11.0). Python and esptool are installed separately.
-
-Thanks also to the FM-1 firmware authors: [M-VAVE](https://www.cuvave.com/download), [hugelton / Felucca](https://github.com/hugelton/Felucca), [isod89 / SLOOP](https://github.com/isod89/sloop-fm1), [Baud Girl / FM-1+VA](https://baudgirl.com/work/FM-1%2BVA/install), [Charles Vestal / FoMni](https://github.com/charlesvestal/fm1-fomni) and [X0X](https://github.com/charlesvestal/fm1-x0x), [zednaked / Jangada](https://github.com/zednaked/jangada), [FM1 Open](https://github.com/m-vave/fm1_open). Obtain these third-party FM-1 firmware releases from their original publishers and use the compatible versions listed for this release.
-
-See the [complete third-party inventory](#linked-libraries-and-runtime) for lower-level components, pinned versions, usage and licensing. The bundle also includes Chinese/English notices and original license texts. All projects retain their original copyrights and terms; acknowledgment does not imply endorsement.
+Third-party terms and sources are documented in the [third-party notices](#linked-libraries-and-runtime).
 
 ## Firmware icons
 
@@ -40,7 +33,7 @@ The distribution retains license copies for ESP-IDF 5.4.2, LVGL 9.6.0~1, the pin
 
 ### Lower-level component sources
 
-Thank you to the maintainers of components integrated by ESP-IDF and LVGL. These links point to component directories in the SDK used by this release, or to their upstream projects. Usage and license scope remain as documented here and in the original texts.
+These links point to component directories in the SDK used by this release, or to their upstream projects. Usage and license scope remain as documented here and in the original texts.
 
 [FreeRTOS](https://github.com/espressif/esp-idf/tree/v5.4.2/components/freertos), [lwIP](https://github.com/espressif/esp-idf/tree/v5.4.2/components/lwip), [cJSON](https://github.com/espressif/esp-idf/tree/v5.4.2/components/json), [Mbed TLS](https://github.com/espressif/esp-idf/tree/v5.4.2/components/mbedtls), [SPIFFS](https://github.com/espressif/esp-idf/tree/v5.4.2/components/spiffs), [NimBLE](https://github.com/espressif/esp-idf/tree/v5.4.2/components/bt/host/nimble), [TinyCrypt](https://github.com/espressif/esp-idf/tree/v5.4.2/components/bt/common/tinycrypt), [protobuf-c](https://github.com/espressif/esp-idf/tree/v5.4.2/components/protobuf-c), [linenoise / argtable3](https://github.com/espressif/esp-idf/tree/v5.4.2/components/console), [FatFs](https://github.com/espressif/esp-idf/tree/v5.4.2/components/fatfs), [TLSF](https://github.com/espressif/esp-idf/tree/v5.4.2/components/heap), [UBSAN](https://github.com/espressif/esp-idf/blob/v5.4.2/components/esp_system/ubsan.c). LVGL's built-in formatting implementation references [mpaland/printf](https://github.com/mpaland/printf); built-in font sources include [Montserrat](https://github.com/JulietaUla/Montserrat) and [Font Awesome](https://fontawesome.com/).
 

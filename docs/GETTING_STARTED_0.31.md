@@ -124,15 +124,8 @@ fm1/
 
 反馈问题时提供：Tab5 屏幕型号、M1n1Le55 版本/修订、FM-1 固件身份、操作步骤和错误文字即可。公开反馈前遮住串口日志中的蓝牙地址、个人目录、音色/工程内容；不要上传完整 Flash、NVS 或个人 SD 备份。
 
-## 第三方组件与致谢
+## 固件提供者致谢
 
-感谢以下项目的作者与贡献者，为 M1n1Le55 提供硬件支持、开源组件、字体和 FM-1 研究成果：
+感谢以下 FM-1 固件提供者：[M-VAVE](https://www.cuvave.com/download)、[hugelton / Felucca](https://github.com/hugelton/Felucca)、[isod89 / SLOOP](https://github.com/isod89/sloop-fm1)、[Baud Girl / FM-1+VA](https://baudgirl.com/work/FM-1%2BVA/install)、[Charles Vestal / FoMni](https://github.com/charlesvestal/fm1-fomni) 与 [X0X](https://github.com/charlesvestal/fm1-x0x)、[zednaked / Jangada](https://github.com/zednaked/jangada)、[FM1 Open](https://github.com/m-vave/fm1_open)。这些第三方 FM-1 固件需从原作者处取得，下载时请使用本版列明的兼容版本。
 
-- **硬件与界面：** [M5Stack Tab5](https://docs.m5stack.com/en/core/Tab5)、[ESP-IDF 5.4.2](https://github.com/espressif/esp-idf/tree/v5.4.2)、[Tab5 BSP 1.3.2](https://components.espressif.com/components/espressif/m5stack_tab5/versions/1.3.2)、[ESP-Hosted 2.12.9](https://components.espressif.com/components/espressif/esp_hosted/versions/2.12.9)、[LVGL 9.6.0~1](https://components.espressif.com/components/lvgl/lvgl/versions/9.6.0~1)。
-- **音色与解码参考：** [Ben Sparrow / FM-1 编辑器](https://github.com/benny-sparra/fm1-dx7-patch-importer)、[Dani Biro / SEA codec](https://github.com/Daninet/sea-codec)、[M-VAVE / FM1 Open](https://github.com/m-vave/fm1_open)。
-- **字体与字形：** [Adobe / 思源黑体](https://github.com/adobe-fonts/source-han-sans)、[Viznut / Unscii](https://viznut.fi/unscii/)、[Montserrat](https://github.com/JulietaUla/Montserrat)、[Font Awesome](https://fontawesome.com/)。
-- **运行时与安装工具：** [GCC](https://gcc.gnu.org/)、[Newlib](https://sourceware.org/newlib/)、[Python](https://www.python.org/)、[esptool 4.11.0](https://github.com/espressif/esptool/tree/v4.11.0)。Python 与 esptool 由用户另行安装。
-
-同时感谢 FM-1 固件作者：[M-VAVE](https://www.cuvave.com/download)、[hugelton / Felucca](https://github.com/hugelton/Felucca)、[isod89 / SLOOP](https://github.com/isod89/sloop-fm1)、[Baud Girl / FM-1+VA](https://baudgirl.com/work/FM-1%2BVA/install)、[Charles Vestal / FoMni](https://github.com/charlesvestal/fm1-fomni) 与 [X0X](https://github.com/charlesvestal/fm1-x0x)、[zednaked / Jangada](https://github.com/zednaked/jangada)、[FM1 Open](https://github.com/m-vave/fm1_open)。这些第三方 FM-1 固件需从原作者处取得，下载时请使用本版列明的兼容版本。
-
-更多底层组件、锁定版本、用途和许可见[完整第三方清单](../THIRD_PARTY_NOTICES.md)；安装包内也附有中英声明及许可原文。各项目保留原有版权和许可，致谢不表示官方背书。
+第三方许可与来源见[第三方声明](../THIRD_PARTY_NOTICES.md)。

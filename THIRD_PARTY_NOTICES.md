@@ -6,18 +6,11 @@
 
 本说明对应 **0.31 / firmware-grid-1**，依赖版本沿用 onboarding-1；新增固件图标说明见下。依赖版本取自随源码提供的 `dependencies.lock.template` 和构建配置；构建辅助脚本将模板转换成本机 `dependencies.lock`。实际链接说明依据该版本的构建链接映射。档案包含成员并不代表档案所有功能均被使用，本表也不是对所有机器码逐条确认的法律审查结论。
 
-## 致谢与上游项目
+## 固件提供者致谢
 
-感谢以下项目的作者与贡献者，为 M1n1Le55 提供硬件支持、开源组件、字体和 FM-1 研究成果：
+感谢以下 FM-1 固件提供者：[M-VAVE](https://www.cuvave.com/download)、[hugelton / Felucca](https://github.com/hugelton/Felucca)、[isod89 / SLOOP](https://github.com/isod89/sloop-fm1)、[Baud Girl / FM-1+VA](https://baudgirl.com/work/FM-1%2BVA/install)、[Charles Vestal / FoMni](https://github.com/charlesvestal/fm1-fomni) 与 [X0X](https://github.com/charlesvestal/fm1-x0x)、[zednaked / Jangada](https://github.com/zednaked/jangada)、[FM1 Open](https://github.com/m-vave/fm1_open)。这些第三方 FM-1 固件需从原作者处取得，下载时请使用本版列明的兼容版本。
 
-- **硬件与界面：** [M5Stack Tab5](https://docs.m5stack.com/en/core/Tab5)、[ESP-IDF 5.4.2](https://github.com/espressif/esp-idf/tree/v5.4.2)、[Tab5 BSP 1.3.2](https://components.espressif.com/components/espressif/m5stack_tab5/versions/1.3.2)、[ESP-Hosted 2.12.9](https://components.espressif.com/components/espressif/esp_hosted/versions/2.12.9)、[LVGL 9.6.0~1](https://components.espressif.com/components/lvgl/lvgl/versions/9.6.0~1)。
-- **音色与解码参考：** [Ben Sparrow / FM-1 编辑器](https://github.com/benny-sparra/fm1-dx7-patch-importer)、[Dani Biro / SEA codec](https://github.com/Daninet/sea-codec)、[M-VAVE / FM1 Open](https://github.com/m-vave/fm1_open)。
-- **字体与字形：** [Adobe / 思源黑体](https://github.com/adobe-fonts/source-han-sans)、[Viznut / Unscii](https://viznut.fi/unscii/)、[Montserrat](https://github.com/JulietaUla/Montserrat)、[Font Awesome](https://fontawesome.com/)。
-- **运行时与安装工具：** [GCC](https://gcc.gnu.org/)、[Newlib](https://sourceware.org/newlib/)、[Python](https://www.python.org/)、[esptool 4.11.0](https://github.com/espressif/esptool/tree/v4.11.0)。Python 与 esptool 由用户另行安装。
-
-同时感谢 FM-1 固件作者：[M-VAVE](https://www.cuvave.com/download)、[hugelton / Felucca](https://github.com/hugelton/Felucca)、[isod89 / SLOOP](https://github.com/isod89/sloop-fm1)、[Baud Girl / FM-1+VA](https://baudgirl.com/work/FM-1%2BVA/install)、[Charles Vestal / FoMni](https://github.com/charlesvestal/fm1-fomni) 与 [X0X](https://github.com/charlesvestal/fm1-x0x)、[zednaked / Jangada](https://github.com/zednaked/jangada)、[FM1 Open](https://github.com/m-vave/fm1_open)。这些第三方 FM-1 固件需从原作者处取得，下载时请使用本版列明的兼容版本。
-
-更多底层组件、锁定版本、用途和许可见[完整第三方清单](#锁定组件与获取方式)；安装包内也附有中英声明及许可原文。各项目保留原有版权和许可，致谢不表示官方背书。
+第三方许可与来源见[第三方声明](#锁定组件与获取方式)。
 
 ## 固件识别图标
 
@@ -44,7 +37,7 @@
 
 ### 底层组件来源链接
 
-感谢 ESP-IDF 与 LVGL 所集成组件的维护者。以下链接指向本版所用 SDK 的组件目录或项目上游；具体使用范围与许可仍以本说明和原文为准。
+以下链接指向本版所用 SDK 的组件目录或项目上游；具体使用范围与许可仍以本说明和原文为准。
 
 [FreeRTOS](https://github.com/espressif/esp-idf/tree/v5.4.2/components/freertos)、[lwIP](https://github.com/espressif/esp-idf/tree/v5.4.2/components/lwip)、[cJSON](https://github.com/espressif/esp-idf/tree/v5.4.2/components/json)、[Mbed TLS](https://github.com/espressif/esp-idf/tree/v5.4.2/components/mbedtls)、[SPIFFS](https://github.com/espressif/esp-idf/tree/v5.4.2/components/spiffs)、[NimBLE](https://github.com/espressif/esp-idf/tree/v5.4.2/components/bt/host/nimble)、[TinyCrypt](https://github.com/espressif/esp-idf/tree/v5.4.2/components/bt/common/tinycrypt)、[protobuf-c](https://github.com/espressif/esp-idf/tree/v5.4.2/components/protobuf-c)、[linenoise / argtable3](https://github.com/espressif/esp-idf/tree/v5.4.2/components/console)、[FatFs](https://github.com/espressif/esp-idf/tree/v5.4.2/components/fatfs)、[TLSF](https://github.com/espressif/esp-idf/tree/v5.4.2/components/heap)、[UBSAN](https://github.com/espressif/esp-idf/blob/v5.4.2/components/esp_system/ubsan.c)。LVGL 内置格式化实现参考 [mpaland/printf](https://github.com/mpaland/printf)；字体来源为 [Montserrat](https://github.com/JulietaUla/Montserrat) 和 [Font Awesome](https://fontawesome.com/)。
 
