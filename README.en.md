@@ -77,4 +77,15 @@ Start with [Build from source](docs/BUILDING.en.md). Runtime source is in [main/
 
 ## License and credits
 
-Project-owned code is licensed under [MIT](LICENSE). Third-party code, fonts, marks and binary dependencies retain their own terms; see [third-party notices](THIRD_PARTY_NOTICES.en.md). Thanks to M5Stack, Espressif, LVGL, FM-1 protocol researchers and firmware authors. Names and brands belong to their respective owners; no official endorsement is implied.
+Project-owned code is licensed under [MIT](LICENSE); third-party material retains its original terms.
+
+Thank you to the authors and contributors whose hardware support, open-source components, fonts and FM-1 research make M1n1Le55 possible:
+
+- **Hardware and UI:** [M5Stack Tab5](https://docs.m5stack.com/en/core/Tab5), [ESP-IDF 5.4.2](https://github.com/espressif/esp-idf/tree/v5.4.2), [Tab5 BSP 1.3.2](https://components.espressif.com/components/espressif/m5stack_tab5/versions/1.3.2), [ESP-Hosted 2.12.9](https://components.espressif.com/components/espressif/esp_hosted/versions/2.12.9), [LVGL 9.6.0~1](https://components.espressif.com/components/lvgl/lvgl/versions/9.6.0~1).
+- **Sound and decoding references:** [Ben Sparrow / FM-1 editor](https://github.com/benny-sparra/fm1-dx7-patch-importer), [Dani Biro / SEA codec](https://github.com/Daninet/sea-codec), [M-VAVE / FM1 Open](https://github.com/m-vave/fm1_open).
+- **Fonts and glyphs:** [Adobe / Source Han Sans](https://github.com/adobe-fonts/source-han-sans), [Viznut / Unscii](https://viznut.fi/unscii/), [Montserrat](https://github.com/JulietaUla/Montserrat), [Font Awesome](https://fontawesome.com/).
+- **Runtime and installation tools:** [GCC](https://gcc.gnu.org/), [Newlib](https://sourceware.org/newlib/), [Python](https://www.python.org/), [esptool 4.11.0](https://github.com/espressif/esptool/tree/v4.11.0). Python and esptool are installed separately.
+
+Thanks also to the FM-1 firmware authors: [M-VAVE](https://www.cuvave.com/download), [hugelton / Felucca](https://github.com/hugelton/Felucca), [isod89 / SLOOP](https://github.com/isod89/sloop-fm1), [Baud Girl / FM-1+VA](https://baudgirl.com/work/FM-1%2BVA/install), [Charles Vestal / FoMni](https://github.com/charlesvestal/fm1-fomni) and [X0X](https://github.com/charlesvestal/fm1-x0x), [zednaked / Jangada](https://github.com/zednaked/jangada), [FM1 Open](https://github.com/m-vave/fm1_open). Obtain these third-party FM-1 firmware releases from their original publishers and use the compatible versions listed for this release.
+
+See the [complete third-party inventory](THIRD_PARTY_NOTICES.en.md) for lower-level components, pinned versions, usage and licensing. The bundle also includes Chinese/English notices and original license texts. All projects retain their original copyrights and terms; acknowledgment does not imply endorsement.
